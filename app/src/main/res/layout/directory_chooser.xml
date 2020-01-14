@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_small">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorGray79"
+            android:text="@string/cancel" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorGray79"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/directory_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/nav_up"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#444"
+            android:clickable="false"
+            android:contentDescription="@string/navigate_upwards"
+            android:contextClickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_arrow_up" />
+
+        <TextView
+            android:id="@+id/selected_folder_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/nav_up"
+            android:layout_toRightOf="@id/nav_up"
+            android:text="@string/selected_folder"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/selected_folder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/selected_folder_label"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/nav_up"
+            android:layout_toRightOf="@id/nav_up"
+            android:ellipsize="start"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            tools:text="/path/to/selected/folder" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/directory_info" />
+</RelativeLayout>

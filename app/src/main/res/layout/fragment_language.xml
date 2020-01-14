@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_navigation_bar" />
+
+    <LinearLayout
+        android:id="@+id/laguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/colorBlack">
+
+        <TextView
+            android:id="@+id/txtTitleLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:text="@string/language_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptionLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spacing_line"
+        android:background="@color/colorGreyButton" />
+
+    <LinearLayout
+        android:id="@+id/translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/txtTitleTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:text="@string/language_translation"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:text="@string/language_translation_description"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spacing_line"
+        android:background="@color/colorGreyButton" />
+
+    <LinearLayout
+        android:id="@+id/translator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/txtTitleTranslator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:text="@string/language_translators"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTranslator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:gravity="center_vertical"
+            android:text="@string/language_translators_description"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spacing_line"
+        android:background="@color/colorGreyButton" />
+</LinearLayout>

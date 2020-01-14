@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/item_navigation_bar" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="Donate with Call Recorder"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:hint="Amount"
+        android:inputType="number"
+        android:paddingBottom="@dimen/spacing_medium"
+        android:paddingTop="@dimen/spacing_medium"
+        android:textColorHint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/donate"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_medium"
+        android:paddingLeft="@dimen/spacing_large"
+        android:paddingRight="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_medium"
+        android:text="DONATE WITH PAYPAL"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

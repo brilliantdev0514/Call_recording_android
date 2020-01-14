@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragmentViewParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/coverNetworkLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_dark"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/initialProgressBar"
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            android:progressDrawable="@drawable/progress_bar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_navigation_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/switchPin"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/ic_cloud_upload"
+                    android:scaleType="center"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:gravity="center_vertical"
+                    android:text="Dropbox"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_line"
+                android:background="@color/colorGreyButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

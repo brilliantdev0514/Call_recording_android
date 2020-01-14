@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string
+        name="ga_trackingId"
+        translatable="false">UA-108442922-1
+    </string>
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <!-- The screen names that will appear in reports -->
+    <screenName name="vn.harry.callrecorder.ui.setting.SettingFragment">
+        Setting screen
+    </screenName>
+    <screenName name="vn.harry.callrecorder.ui.setting.tcr.TCRFragment">
+        TCR screen
+    </screenName>
+    <screenName name="vn.harry.callrecorder.ui.setting.tcr.PolicyFragment">
+        Policy screen
+    </screenName>
+</resources>

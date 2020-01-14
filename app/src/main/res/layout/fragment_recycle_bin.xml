@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_xmedium"
+            android:layout_marginStart="@dimen/spacing_xmedium"
+            android:layout_toEndOf="@+id/ivBack"
+            android:layout_toRightOf="@+id/ivBack"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivRefresh"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_toLeftOf="@+id/llRight"
+            android:layout_toStartOf="@+id/llRight"
+            android:src="@drawable/ic_action_refresh"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:src="@drawable/ic_trash"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:src="@drawable/ic_action_search"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/drawer_shadow" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

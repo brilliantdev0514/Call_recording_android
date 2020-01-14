@@ -1,0 +1,251 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+
+    <style name="Transparent_status_bar_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="AppThemeDark" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+
+    <style name="toolbar_text" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:fontFamily">@font/standard</item>-->
+    </style>
+    <!--Text View-->
+    <style name="textViewCommon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="txt_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="SCBSwitchTheme" parent="Widget.AppCompat.CompoundButton.Switch"></style>
+
+    <style name="SwichStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:checked">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="number_pin">
+        <item name="android:textStyle">bold</item>
+        <item name="android:checked">false</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- Red App Theme -->
+    <style name="BaseTheme.Red" parent="AppTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/material_red_500</item>
+        <item name="colorPrimaryDark">@color/material_red_700</item>
+        <item name="colorAccent">@color/material_red_a700</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Red</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Red</item>
+    </style>
+
+    <style name="AppTheme.Red" parent="BaseTheme.Red">
+        <!-- API specific attributes 14+ -->
+        <!--<item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_red</item>-->
+        <!--<item name="selectableRoundedRectDrawableColored">-->
+        <!--@drawable/state_list_selectable_rounded_rect_red-->
+        <!--</item>-->
+    </style>
+    <!-- Orange App Theme -->
+    <style name="BaseTheme.Orange" parent="AppTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_a700</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Orange</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Orange</item>
+    </style>
+
+    <style name="AppTheme.Orange" parent="BaseTheme.Orange">
+        <!--&lt;!&ndash; API specific attributes 14+ &ndash;&gt;-->
+        <!--<item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_orange-->
+        <!--</item>-->
+        <!--<item name="selectableRoundedRectDrawableColored">-->
+        <!--@drawable/state_list_selectable_rounded_rect_orange-->
+        <!--</item>-->
+    </style>
+    <!-- Green App Theme -->
+    <style name="BaseTheme.Green" parent="AppTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Green</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Green</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="BaseTheme.Green">
+        <!--&lt;!&ndash; API specific attributes 14+ &ndash;&gt;-->
+        <!--<item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_green</item>-->
+        <!--<item name="selectableRoundedRectDrawableColored">-->
+        <!--@drawable/state_list_selectable_rounded_rect_green-->
+        <!--</item>-->
+    </style>
+    <!-- Blue App Theme -->
+    <style name="BaseTheme.Blue" parent="AppTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_a700</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Blue</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Blue</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="BaseTheme.Blue">
+        <!--&lt;!&ndash; API specific attributes 14+ &ndash;&gt;-->
+        <!--<item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_blue</item>-->
+        <!--<item name="selectableRoundedRectDrawableColored">-->
+        <!--@drawable/state_list_selectable_rounded_rect_blue-->
+        <!--</item>-->
+    </style>
+    <!-- Default App Theme -->
+    <style name="BaseTheme.Default" parent="AppTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Blue</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Blue</item>
+    </style>
+
+    <style name="AppTheme.Default" parent="BaseTheme.Default">
+        <!--&lt;!&ndash; API specific attributes 14+ &ndash;&gt;-->
+        <!--<item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_blue</item>-->
+        <!--<item name="selectableRoundedRectDrawableColored">-->
+        <!--@drawable/state_list_selectable_rounded_rect_blue-->
+        <!--</item>-->
+    </style>
+    <!-- Default Dialog Theme -->
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog"></style>
+    <!-- Red Dialog Theme -->
+    <style name="AppTheme.Dialog.Red">
+        <item name="colorPrimary">@color/material_red_500</item>
+        <item name="colorPrimaryDark">@color/material_red_700</item>
+        <item name="colorAccent">@color/material_red_a700</item>
+    </style>
+    <!-- Orange Dialog Theme -->
+    <style name="AppTheme.Dialog.Orange">
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_a700</item>
+    </style>
+    <!-- Green Dialog Theme -->
+    <style name="AppTheme.Dialog.Green">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+    <!-- Blue Dialog Theme -->
+    <style name="AppTheme.Dialog.Blue">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_a700</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Default">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Default Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert"></style>
+    <!-- Red Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.Red">
+        <item name="colorPrimary">@color/material_red_500</item>
+        <item name="colorPrimaryDark">@color/material_red_700</item>
+        <item name="colorAccent">@color/material_red_a700</item>
+    </style>
+    <!-- Orange Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.Orange">
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_a700</item>
+    </style>
+    <!-- Green Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.Green">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+    <!-- Blue Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.Blue">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_a700</item>
+    </style><!-- Blue Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.DEFAULT">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing_xxlarge"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_xxlarge" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/spacing_xxlarge">
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Enabled"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switchOnOff"
+            style="@style/SwichStyle"
+            android:layout_gravity="center_vertical"
+            android:theme="@style/SCBSwitchTheme" />
+    </LinearLayout>
+</RelativeLayout>

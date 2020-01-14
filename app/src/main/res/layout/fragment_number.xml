@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.harry.callrecorder.ui.setting.recorder.NumberFragment">
+
+    <RelativeLayout
+        android:id="@+id/actionbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivAddContact"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_toLeftOf="@+id/ivAdd"
+            android:layout_toStartOf="@+id/ivAdd"
+            android:src="@drawable/ic_action_add_person_dark" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:src="@drawable/ic_action_add_dark" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbarFragment"
+        android:divider="#20000000"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/txtNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/textNoneNumber"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4500</color>
+    <color name="colorPrimaryDark">#EE4000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTro">#EEEEEE</color>
+
+    <color name="colorPink">#df288e</color>
+    <color name="colorBlack">#1e1e1e</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="progress_bg">#6f6f6f</color>
+    <color name="progress_load">#ffffff</color>
+
+    <color name="colorButtonGrey">#263238</color>
+    <color name="colorGray79">#c9c9c9</color>
+    <color name="colorGray37">#5e5e5e</color>
+    <color name="colorBlue">#3c55a2</color>
+    <color name="colorGreyButton">#F0EFED</color>
+    <color name="colorAppDefault">#FAFAFA</color>
+
+    <color name="colorDarkButton">#202326</color>
+    <color name="colorYellow">#e6e600</color>
+    <color name="colorGreen">#1aba79</color>
+    <color name="colorCityTour">#323b42</color>
+    <color name="transparent_dark">#1A000000</color>
+    <color name="colorDivider">#EFEFEF</color>
+    <color name="colorBluePrimary">#3F51B5</color>
+    <color name="black_overlay">#787878</color>
+    <color name="colorTint">#757575</color>
+    <!---->
+    <color name="material_red_500">#F44336</color>
+    <color name="material_red_700">#D32F2F</color>
+    <color name="material_red_a700">#D50000</color>
+
+    <color name="material_orange_500">#FF9800</color>
+    <color name="material_orange_700">#F57C00</color>
+    <color name="material_orange_a700">#FF6D00</color>
+
+    <color name="material_green_500">#4CAF50</color>
+    <color name="material_green_700">#388E3C</color>
+    <color name="material_green_a700">#00C853</color>
+
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_blue_700">#1976D2</color>
+    <color name="material_blue_a700">#2962FF</color>
+    <!---->
+    <!-- Selectors -->
+    <color name="selector_normal">@android:color/transparent</color>
+    <color name="selector_red_focused">#22D50000</color>
+    <color name="selector_red_pressed">#44D50000</color>
+    <color name="selector_orange_focused">#22FF6D00</color>
+    <color name="selector_orange_pressed">#44FF6D00</color>
+    <color name="selector_green_focused">#2200C853</color>
+    <color name="selector_green_pressed">#4400C853</color>
+    <color name="selector_blue_focused">#222962FF</color>
+    <color name="selector_blue_pressed">#442962FF</color>
+</resources>

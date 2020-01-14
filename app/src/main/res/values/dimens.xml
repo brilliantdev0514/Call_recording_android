@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+    <!---->
+    <dimen name="spacing_xxlarge">30dp</dimen>
+    <dimen name="spacing_xlarge">23dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xmedium">10dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_line">1dp</dimen>
+    <dimen name="padding_top_medium">24dp</dimen>
+    <dimen name="padding_bot_small">12dp</dimen>
+    <dimen name="padding_left_small">12dp</dimen>
+    <dimen name="radius_more_project">100dp</dimen>
+    <dimen name="spacing_left_medium">24dp</dimen>
+    <!--text Size-->
+    <dimen name="text_size_medium">14sp</dimen>
+
+    <!--toolBar-->
+    <dimen name="size_image_back_tool_bar">24dp</dimen>
+    <dimen name="size_margin_left_tool_bar">20dp</dimen>
+    <dimen name="size_margin_text_right_tool_bar">24dp</dimen>
+    <dimen name="size_margin_image_right_tool_bar">5dp</dimen>
+    <dimen name="size_text_center_tool_bar">16sp</dimen>
+    <dimen name="size_text_right_tool_bar">14sp</dimen>
+    <!--toolBar-->
+    <!-- Text size -->
+    <dimen name="text_size_small">12sp</dimen>
+    <!-- Selectable Items -->
+    <dimen name="selectable_rounded_rect_corner_radius">3dp</dimen>
+</resources>
