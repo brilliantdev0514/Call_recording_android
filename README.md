@@ -9,7 +9,7 @@ This android application allows you to record all incoming and outgoing calls fr
 
 Link App
 -----------------
-(https://play.google.com/store/apps/details?id=vn.harry.callrecorder)
+(https://play.google.com/store/apps/details?id=com.smart.callrec)
 
 Discussions
 -----------------

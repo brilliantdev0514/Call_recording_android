@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/navigation_drawer"
-        android:name="vn.harry.callrecorder.ui.navigation.NavigationDrawerFragment"
+        android:name="com.smart.callrec.ui.navigation.NavigationDrawerFragment"
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

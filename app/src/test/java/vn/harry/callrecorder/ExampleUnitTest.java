@@ -1,4 +1,4 @@
-package vn.harry.callrecorder;
+package com.smart.callrec;
 
 import org.junit.Test;
 

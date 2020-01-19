@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Call Recorder</string>
+    <string name="app_name">Call Recording</string>
     <string name="banner">ca-app-pub-6367750773212736/3626386414</string>
     <string name="inner">ca-app-pub-6367750773212736/8687141405</string>
     <string name="str_access_permissions">Call Recorder needs access to your contacts to identify your call recordings and prevent selected contacts from being recorded.</string>

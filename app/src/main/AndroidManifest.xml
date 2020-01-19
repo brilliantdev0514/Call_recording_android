@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="vn.harry.callrecorder">
+    package="com.smart.callrec">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -77,11 +77,11 @@
             android:value="2" />
         <meta-data
             android:name="AA_MODELS"
-            android:value="vn.harry.callrecorder.entity.Recording, vn.harry.callrecorder.ui.setting.recorder.NumberPhone" />
+            android:value="com.smart.callrec.entity.Recording, com.smart.callrec.ui.setting.recorder.NumberPhone" />
 
         <provider
             android:name="com.activeandroid.content.ContentProvider"
-            android:authorities="vn.harry.callrecorder"
+            android:authorities="com.smart.callrec"
             android:enabled="true"
             android:exported="false" />
     </application>

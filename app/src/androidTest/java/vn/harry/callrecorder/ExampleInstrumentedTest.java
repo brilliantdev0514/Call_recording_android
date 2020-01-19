@@ -1,4 +1,4 @@
-package vn.harry.callrecorder;
+package com.smart.callrec;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("vn.harry.callrecorder", appContext.getPackageName());
+        assertEquals("com.smart.callrec", appContext.getPackageName());
     }
 }

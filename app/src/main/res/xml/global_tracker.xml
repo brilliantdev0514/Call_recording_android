@@ -7,13 +7,13 @@
     <!-- Enable automatic Activity measurement -->
     <bool name="ga_autoActivityTracking">true</bool>
     <!-- The screen names that will appear in reports -->
-    <screenName name="vn.harry.callrecorder.ui.setting.SettingFragment">
+    <screenName name="com.smart.callrec.ui.setting.SettingFragment">
         Setting screen
     </screenName>
-    <screenName name="vn.harry.callrecorder.ui.setting.tcr.TCRFragment">
+    <screenName name="com.smart.callrec.ui.setting.tcr.TCRFragment">
         TCR screen
     </screenName>
-    <screenName name="vn.harry.callrecorder.ui.setting.tcr.PolicyFragment">
+    <screenName name="com.smart.callrec.ui.setting.tcr.PolicyFragment">
         Policy screen
     </screenName>
 </resources>

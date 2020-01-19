@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="vn.harry.callrecorder.ui.setting.tcr.TCRFragment">
+    tools:context="com.smart.callrec.ui.setting.tcr.TCRFragment">
 
     <include layout="@layout/item_navigation_bar" />
 
