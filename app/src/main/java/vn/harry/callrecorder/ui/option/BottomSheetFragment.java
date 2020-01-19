@@ -149,11 +149,15 @@ public class BottomSheetFragment extends BottomSheetDialogFragment {
         }
     }
 
-    @OnClick({R.id.play, R.id.addNote, R.id.call, R.id.delete, R.id.share})
+    @OnClick({R.id.play, R.id.volume, R.id.addNote, R.id.call, R.id.delete, R.id.share})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.play:
                 startPlayExternal();
+                dismiss();
+                break;
+            case R.id.volume:
+                volumeControl();
                 dismiss();
                 break;
             case R.id.addNote:
@@ -323,6 +327,9 @@ public class BottomSheetFragment extends BottomSheetDialogFragment {
             Toast.makeText(getActivity(), getString(R.string.can_recorder), Toast.LENGTH_SHORT).show();
         }
 
+    }
+    private void volumeControl(){
+        Toast.makeText(getActivity(), "Volume", Toast.LENGTH_LONG).show();
     }
 
     @Override
